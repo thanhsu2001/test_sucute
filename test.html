@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<script></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css"> -->
+    <title>Document</title>
+</head>
+<body>
+<ul class="list-group">
+    <li>
+        <span class="d-block">Item1</span>
+        <button class="btn">&times;</button>
+    </li>
+    <br>
+    <li>
+        <span class="d-block">Item1</span>
+        <button class="btn">&times;</button>
+    </li>
+    <br>
+    <li>
+        <span class="d-block">Item1</span>
+        <button class="btn">&times;</button>
+    </li>
+    <br>
+    <li>
+        <span class="d-block">Item1</span>
+        <button class="btn">&times;</button>
+    </li>
+    <br>
+</ul>
+    <script>
+        $(function(ev){
+            $(".btn").click(function(ev){
+                let liEle = $(this).closest("li");
+                liEle.slideToggle(500,()=>{
+                    alert("xong");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
